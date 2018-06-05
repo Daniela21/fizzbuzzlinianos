@@ -1,0 +1,13 @@
+{
+    "name": "daniela/fizzbuzzlinianos",
+    "description": "This program prints all the numbers from 1 to 100 ...is a fizzbuzz for linio",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Daniela Mondragon Rosas",
+            "email": "danamrosas2@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
