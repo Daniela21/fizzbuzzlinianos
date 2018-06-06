@@ -24,3 +24,8 @@ composer app
 ```sh
 composer tests
 ```
+## To fix code
+
+```sh
+composer fix
+```
