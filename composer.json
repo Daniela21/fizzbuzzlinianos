@@ -16,6 +16,9 @@
     "minimum-stability": "dev",
     "require": {
         "phpunit/phpunit": "^7.3@dev"
+    },
+    "scripts": {
+        "tests": "phpunit",
+        "app": "php app/index.php"
     }
-
 }
