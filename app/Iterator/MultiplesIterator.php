@@ -39,7 +39,7 @@ class MultiplesIterator implements Iterator
         ++$this->number;
     }
 
-    public function valid(): int
+    public function valid(): bool
     {
         return $this->number <= $this->to;
     }
