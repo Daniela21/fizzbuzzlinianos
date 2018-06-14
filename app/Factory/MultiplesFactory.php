@@ -12,7 +12,6 @@ class MultiplesFactory
 
     public function __construct(array $multiples = [])
     {
-        $this->linianosOutput = new Output;
         $this->multiples = $multiples;
         krsort($this->multiples);
     }
@@ -25,7 +24,9 @@ class MultiplesFactory
             }
         }
 
-        return $this->linianosOutput->convertToString($number);
+        $value  = new Output($number);
+
+        return $value->convertToString();
     }
 
     protected function module(int $number, int $multiples): int

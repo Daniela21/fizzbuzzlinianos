@@ -2,10 +2,17 @@
 
 namespace App;
 
-class Output
+class Output extends ConvertString
 {
-    public function convertToString(int $value): string
+    private $value;
+
+    public function __construct(int $value)
     {
-        return (string) $value;
+        $this->value = $value;
+    }
+
+    public function convertToString(): string
+    {
+        return $this->value;
     }
 }
