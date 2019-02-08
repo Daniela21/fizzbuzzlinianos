@@ -4,8 +4,7 @@ use App\Factory\MultiplesFactory;
 
 class MultiplesFactoryTest extends \PHPUnit\Framework\TestCase
 {
-    /** @test */
-    public function checkIfMultiplesValueConvertsToStringDifferentToMultiples()
+    public function testCheckIfMultiplesValueConvertsToStringDifferentToMultiples()
     {
         $values = new MultiplesFactory([3 => 'Linio', 5 => 'IT', 15 => 'Linianos']);
 
@@ -18,8 +17,7 @@ class MultiplesFactoryTest extends \PHPUnit\Framework\TestCase
         $this->assertNotEquals('Linianos', $searchingTheMultiple);
     }
 
-    /** @test */
-    public function checkIfConvertsTheMultiplesOfThreeToTheIndicatedString()
+    public function testCheckIfConvertsTheMultiplesOfThreeToTheIndicatedString()
     {
         $values = new MultiplesFactory([3 => 'Linio', 5 => 'IT', 15 => 'Linianos']);
 
@@ -30,8 +28,7 @@ class MultiplesFactoryTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals('Linio', $searchingTheMultiple);
     }
 
-    /** @test */
-    public function checkIfConvertsTheMultiplesOfFiveToTheIndicatedString()
+    public function testCheckIfConvertsTheMultiplesOfFiveToTheIndicatedString()
     {
         $values = new MultiplesFactory([3 => 'Linio', 5 => 'IT', 15 => 'Linianos']);
 
@@ -42,8 +39,7 @@ class MultiplesFactoryTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals('IT', $searchingTheMultiple);
     }
 
-    /** @test */
-    public function checkIfConvertsTheMultiplesOfFifteenToTheIndicatedString()
+    public function testCheckIfConvertsTheMultiplesOfFifteenToTheIndicatedString()
     {
         $values = new MultiplesFactory([3 => 'Linio', 5 => 'IT', 15 => 'Linianos']);
 
